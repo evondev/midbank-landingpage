@@ -1,0 +1,82 @@
+.cta {
+  padding: 163px 0;
+  position: relative;
+  &-circle {
+    position: absolute;
+    left: 0;
+    top: 68px;
+    z-index: -1;
+  }
+  &-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 0 60px 0 100px;
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("../images/cta-bg.png") no-repeat center / cover;
+      z-index: -1;
+    }
+  }
+  &-image {
+    flex-shrink: 0;
+  }
+  &-content {
+    padding: 80px 0 130px 0;
+  }
+  &-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  &-link {
+    padding: 16px 23px;
+    border-radius: 100rem;
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: $font-poppins;
+  }
+  .app-store {
+    background-color: transparent;
+    color: #3975f2;
+    border: 2px solid;
+  }
+  .play-store {
+    color: white;
+    background: linear-gradient(180deg, #3975f2 0%, #0643c4 100%);
+  }
+  .heading {
+    margin-bottom: 16px;
+  }
+  .text {
+    margin-bottom: 66px;
+  }
+  @media screen and (max-width: 1023.98px) {
+    padding: 60px 0;
+    &-container {
+      padding: 20px;
+      flex-direction: column;
+      gap: 60px 0;
+    }
+    &-content {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &-links {
+      flex-direction: column;
+      align-items: flex-start;
+      & > * {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}

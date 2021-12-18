@@ -1,0 +1,14 @@
+mixin workItem(image, title, desc)
+  .work-item
+    .work-icon
+      img(srcset= image, alt="")
+    h3.work-title= title
+    p.work-desc= desc
+
+mixin serviceItem(icon, title, text)
+  .service-item
+    .service-icon
+      img(srcset= icon, alt="")
+    h3.service-title= title
+    p.service-text= text
+      | <a href="#!">Read More</a>

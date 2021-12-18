@@ -1,0 +1,45 @@
+$font-poppins: "Poppins", sans-serif;
+$font-dm: "DM Sans", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
+body {
+  color: white;
+  font-family: $font-montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  background: #0b0547;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.caption {
+  font-weight: bold;
+  font-size: 12px;
+  background: linear-gradient(91.71deg, #63b8b1 2.15%, #f99838 97.69%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: $font-poppins;
+  margin-bottom: 14px;
+}
+.heading {
+  font-family: $font-dm;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: calc(56 / 44);
+  margin-bottom: 16px;
+}
+.text {
+  color: #777e91;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $font-poppins;
+}
+@media screen and (max-width: 1023.98px) {
+  .heading {
+    font-size: 35px;
+  }
+}

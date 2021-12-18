@@ -1,0 +1,56 @@
+.testimonial {
+  padding: 120px 0;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 117px;
+    max-width: 940px;
+    margin: 0 auto;
+    font-family: $font-poppins;
+  }
+  &-image {
+    flex-shrink: 0;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid #c1edff;
+      border-radius: 12px;
+      transform: rotate(4.39deg);
+      z-index: -1;
+    }
+  }
+  &-quote {
+    margin-bottom: 13px;
+  }
+  &-author {
+    color: #d2d7e1;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  &-job {
+    color: #777e91;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .heading {
+    margin-bottom: 16px;
+  }
+  .text {
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 1023.98px) {
+    padding: 60px 0;
+    &-container {
+      gap: 40px;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      flex-direction: column;
+    }
+  }
+}

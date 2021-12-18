@@ -1,0 +1,71 @@
+.subscribe {
+  padding: 70px 0;
+  &-container {
+    border-radius: 12px;
+    position: relative;
+    padding: 48px 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(
+      180deg,
+      rgba(199, 209, 255, 0.2) -2.33%,
+      rgba(82, 102, 192, 0.148) 103.4%
+    );
+    backdrop-filter: blur(20px);
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: url("../images/subscribe-bg2.png") no-repeat center / cover;
+    }
+  }
+  &-form {
+    width: 100%;
+    max-width: 517px;
+    display: flex;
+    gap: 16px;
+  }
+  &-field {
+    border-radius: 100rem;
+    position: relative;
+    flex: 1;
+    border: 2px solid #3975f2;
+  }
+  &-input {
+    padding: 24px 34px;
+    border-radius: 100rem;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    font-family: $font-poppins;
+    background: transparent;
+    width: 100%;
+  }
+  &-button {
+    padding: 24px 36px;
+    background: linear-gradient(180deg, #3975f2 0%, #0643c4 100%);
+    border-radius: 100rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: $font-poppins;
+    border: 0;
+    flex-shrink: 0;
+  }
+  .text {
+    max-width: 421px;
+    margin: 0 auto 44px;
+  }
+  @media screen and (max-width: 767.98px) {
+    padding: 60px 0;
+    &-form {
+      flex-direction: column;
+    }
+  }
+}

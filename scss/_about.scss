@@ -1,0 +1,40 @@
+.about {
+  padding: 98px 0;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 86px;
+  }
+
+  &-heading {
+    margin-bottom: 42px;
+  }
+  .text {
+    color: #ffffff;
+    opacity: 0.6;
+    font-weight: 500;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  &-more {
+    color: #eea153;
+    font-weight: 600;
+    font-family: $font-poppins;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: 1024px) {
+    &-content {
+      max-width: 501px;
+    }
+  }
+
+  @media screen and (max-width: 1023.98px) {
+    padding: 60px 0;
+    &-container {
+      flex-direction: column;
+      gap: 40px 0;
+    }
+  }
+}

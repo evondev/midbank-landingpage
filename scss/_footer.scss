@@ -1,0 +1,94 @@
+.footer {
+  &-container {
+    padding: 50px 0 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  &-social {
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+  }
+  .social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 100rem;
+    background: rgba(#41329c, 0.2);
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: white;
+    }
+  }
+  &-heading {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: $font-poppins;
+    margin-bottom: 25px;
+  }
+  &-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    list-style: none;
+    a {
+      color: #ffffff;
+      opacity: 0.6;
+      font-size: 14px;
+      font-family: $font-poppins;
+    }
+  }
+  [name="logo-facebook"] {
+    color: #3964bf;
+  }
+  [name="logo-google"] {
+    color: #f34a38;
+  }
+  [name="logo-twitter"] {
+    color: #5194df;
+  }
+  [name="logo-dribbble"] {
+    color: #d03f84;
+  }
+  .logo {
+    margin-bottom: 31px;
+  }
+  .text {
+    margin-bottom: 25px;
+    max-width: 291px;
+  }
+  .copy-right {
+    padding: 24px;
+    background-color: #111125;
+    font-family: $font-poppins;
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    a {
+      color: #ffffff;
+      opacity: 0.8;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &-container {
+      flex-direction: column;
+      gap: 50px;
+      padding: 40px 0;
+    }
+    .copy-right-container {
+      flex-direction: column;
+      gap: 20px;
+      font-size: 12px;
+    }
+  }
+}

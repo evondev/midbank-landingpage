@@ -1,0 +1,78 @@
+.work {
+  padding: 120px 0;
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 80px;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: $font-poppins;
+  }
+  &-icon {
+    margin-bottom: 34px;
+    width: 150px;
+    height: 150px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(117, 108, 207, 0.1);
+    border: 1px solid rgba(240, 238, 255, 0.1);
+    backdrop-filter: blur(11px);
+    position: relative;
+  }
+  &-icon:after {
+    content: "";
+    background: #748efa;
+    border: 1px solid rgba(240, 238, 255, 0.1);
+    filter: blur(66px);
+    border-radius: 18px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  &-desc {
+    color: #758285;
+    line-height: 1.5;
+  }
+  @media screen and (max-width: 1023px) {
+    padding: 60px 0;
+    &-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 300px;
+      grid-auto-flow: column;
+      grid-gap: 1.5rem;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+    }
+    &-list::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    &-list > * {
+      scroll-snap-align: start;
+    }
+  }
+}
